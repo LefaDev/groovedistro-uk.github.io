@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium vinyl music distribution for independent labels and artists across the UK and Europe.">
+    <title>GROOVE DISTRO | Premium Vinyl Distribution UK 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0F0F0F',
+                            white: '#FFFFFF',
+                            accent: '#E2FF31', /* Electric Lime for that 'indie' feel */
+                            surface: '#1A1A1A',
+                            muted: '#A3A3A3',
+                            border: '#262626'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Instrument Serif', 'serif'],
+                    },
+                    spacing: {
+                        '4': '4px',
+                        '8': '8px',
+                        '16': '16px',
+                        '24': '24px',
+                        '32': '32px',
+                        '48': '48px',
+                        '64': '64px',
+                        '80': '80px',
+                        '120': '120px',
+                        '160': '160px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #FFFFFF;
+            background-color: #0F0F0F;
+        }
+        .header-glass {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #262626;
+        }
+        .btn-accent {
+            background-color: #E2FF31;
+            color: #0F0F0F;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-accent:hover {
+            transform: scale(1.05);
+            background-color: #FFFFFF;
+        }
+        .vinyl-glow:hover {
+            box-shadow: 0 0 30px rgba(226, 255, 49, 0.15);
+        }
+        .section-padding {
+            padding: 120px 24px;
+        }
+        .nav-link {
+            color: #A3A3A3;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #E2FF31;
+        }
+        ::selection {
+            background: #E2FF31;
+            color: #0F0F0F;
+        }
+        /* Custom scroll behavior for the marquee */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 header-glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#E2FF31" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="3" fill="#E2FF31"/>
+                    <path d="M12 2C12 2 15 6 15 12C15 18 12 22 12 22" stroke="#E2FF31" stroke-width="0.5"/>
+                </svg>
+                <span class="font-bold text-xl tracking-tighter uppercase">Groove Distro</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-48">
+                <a href="#catalogue" class="nav-link text-xs font-bold uppercase tracking-widest">Catalogue</a>
+                <a href="#services" class="nav-link text-xs font-bold uppercase tracking-widest">Services</a>
+                <a href="#about" class="nav-link text-xs font-bold uppercase tracking-widest">Global Export</a>
+                <a href="#contact" class="btn-accent px-24 py-10 rounded-full text-xs font-bold uppercase tracking-widest">Partner in 2026</a>
+            </div>
+
+            <button class="md:hidden text-brand-accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-160 pb-120 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-64 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-8 px-12 py-4 rounded-full border border-brand-border mb-32">
+                        <span class="w-8 h-8 rounded-full bg-brand-accent animate-pulse"></span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-muted">London HQ • 2026 Global Dispatch Live</span>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-serif italic leading-tight mb-32">
+                        The heartbeat of <span class="text-brand-accent">Analog</span> culture.
+                    </h1>
+                    <p class="text-lg text-brand-muted mb-48 leading-relaxed max-w-lg">
+                        Bridging the gap between independent record labels and the world's finest record stores for over 14 years. Specialized vinyl distribution, logistics, and retail strategy.
+                    </p>
+                    <div class="flex flex-wrap gap-16">
+                        <a href="#catalogue" class="btn-accent px-40 py-20 rounded-lg font-bold uppercase tracking-widest text-sm">2026 Releases</a>
+                        <a href="#contact" class="border border-brand-border px-40 py-20 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-brand-surface transition-colors">Apply as Label</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-full bg-gradient-to-tr from-brand-surface to-brand-black border border-brand-border flex items-center justify-center relative z-10 vinyl-glow transition-all duration-700">
+                        <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&q=80&w=800" alt="Vinyl Record" class="w-4/5 h-4/5 object-cover rounded-full opacity-80 mix-blend-lighten rotate-12">
+                        <!-- Abstract "Groove" lines -->
+                        <div class="absolute inset-0 border-[20px] border-brand-black/50 rounded-full"></div>
+                    </div>
+                    <div class="absolute -top-20 -right-20 w-48 h-48 bg-brand-accent/10 blur-[100px] -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Releases / Catalogue -->
+    <section id="catalogue" class="bg-brand-surface section-padding">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-80 gap-24">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-serif italic mb-16">Spring 2026 Shipments</h2>
+                    <p class="text-brand-muted">Fresh pressings arriving daily at our high-capacity London hub, optimized for ultra-fast European distribution.</p>
+                </div>
+                <div class="flex space-x-12">
+                    <button class="p-16 rounded-full border border-brand-border hover:border-brand-accent transition-colors">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7-7 7 7 7"/></svg>
+                    </button>
+                    <button class="p-16 rounded-full border border-brand-border hover:border-brand-accent transition-colors">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-32">
+                <!-- Record 1 -->
+                <div class="group">
+                    <div class="aspect-square bg-brand-black mb-24 overflow-hidden rounded-sm relative">
+                        <img src="https://m.media-amazon.com/images/I/51KqJZzfkUL._SL1100_.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100">
+                        <div class="absolute top-16 right-16 bg-brand-accent text-brand-black px-8 py-4 text-[10px] font-black uppercase">Sold Out</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Velvet Submarine</h3>
+                    <p class="text-brand-accent text-xs font-bold uppercase tracking-tighter mb-8">Modular Records</p>
+                    <p class="text-brand-muted text-sm">Psychedelic / Electronic</p>
+                </div>
+
+                <!-- Record 2 -->
+                <div class="group">
+                    <div class="aspect-square bg-brand-black mb-24 overflow-hidden rounded-sm relative">
+                        <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100">
+                        <div class="absolute top-16 right-16 bg-white text-brand-black px-8 py-4 text-[10px] font-black uppercase">Q2 Arrival</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Midnight in Peckham</h3>
+                    <p class="text-brand-accent text-xs font-bold uppercase tracking-tighter mb-8">South-East Audio</p>
+                    <p class="text-brand-muted text-sm">Deep House / Jazz</p>
+                </div>
+
+                <!-- Record 3 -->
+                <div class="group">
+                    <div class="aspect-square bg-brand-black mb-24 overflow-hidden rounded-sm">
+                        <img src="https://i0.wp.com/mrvinyliosrecords.gr/wp-content/uploads/2022/12/Madrugada-%E2%80%93-Industrial-Silence-2lp.jpg?fit=1155%2C866&ssl=1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100">
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Industrial Silence</h3>
+                    <p class="text-brand-accent text-xs font-bold uppercase tracking-tighter mb-8">Steel City Works</p>
+                    <p class="text-brand-muted text-sm">Techno / Ambient</p>
+                </div>
+
+                <!-- Record 4 -->
+                <div class="group">
+                    <div class="aspect-square bg-brand-black mb-24 overflow-hidden rounded-sm relative">
+                        <img src="/Neon Horizon - Synthwave collection album.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100">
+                        <div class="absolute top-16 right-16 bg-brand-accent text-brand-black px-8 py-4 text-[10px] font-black uppercase">Pre-Order</div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Neon Horizon</h3>
+                    <p class="text-brand-accent text-xs font-bold uppercase tracking-tighter mb-8">Synthwave Collective</p>
+                    <p class="text-brand-muted text-sm">Retrowave</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Infrastructure -->
+    <section id="services" class="section-padding">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-80 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="grid grid-cols-2 gap-16">
+                        <div class="p-32 bg-brand-surface border border-brand-border rounded-2xl">
+                            <span class="text-brand-accent font-serif italic text-3xl mb-16 block">01</span>
+                            <h4 class="font-bold mb-12">B2B Retail Portal v3</h4>
+                            <p class="text-sm text-brand-muted">AI-driven stock predictions for over 800+ stores globally.</p>
+                        </div>
+                        <div class="p-32 bg-brand-surface border border-brand-border rounded-2xl mt-32">
+                            <span class="text-brand-accent font-serif italic text-3xl mb-16 block">02</span>
+                            <h4 class="font-bold mb-12">Sustainable Fulfillment</h4>
+                            <p class="text-sm text-brand-muted">Fully plastic-free shipping and 100% renewable powered hub.</p>
+                        </div>
+                        <div class="p-32 bg-brand-surface border border-brand-border rounded-2xl">
+                            <span class="text-brand-accent font-serif italic text-3xl mb-16 block">03</span>
+                            <h4 class="font-bold mb-12">Global Strategy</h4>
+                            <p class="text-sm text-brand-muted">Custom export pathways for 2026 trade environments.</p>
+                        </div>
+                        <div class="p-32 bg-brand-surface border border-brand-border rounded-2xl mt-32">
+                            <span class="text-brand-accent font-serif italic text-3xl mb-16 block">04</span>
+                            <h4 class="font-bold mb-12">Bio-Vinyl Pressing</h4>
+                            <p class="text-sm text-brand-muted">Exclusive partnerships for low-carbon record manufacturing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-5xl font-serif italic mb-32 leading-tight">Leading the <span class="text-brand-accent">2026</span> Analog Renaissance.</h2>
+                    <p class="text-brand-muted text-lg mb-40">The industry has changed, but the needle hasn't moved on quality. Our network ensures your vision reaches the most dedicated listeners on Earth.</p>
+                    <ul class="space-y-16">
+                        <li class="flex items-center space-x-12 text-sm font-medium">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E2FF31" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Expanded retail reach including 2026 New York & Tokyo hubs</span>
+                        </li>
+                        <li class="flex items-center space-x-12 text-sm font-medium">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E2FF31" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Advanced real-time analytics for independent labels</span>
+                        </li>
+                        <li class="flex items-center space-x-12 text-sm font-medium">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E2FF31" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Zero-emission courier partnerships across the UK</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="py-64 border-y border-brand-border bg-brand-black overflow-hidden relative">
+        <div class="flex items-center space-x-64 whitespace-nowrap opacity-30 animate-marquee">
+            <span class="text-2xl font-black uppercase tracking-tighter">XL Recordings</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Ninja Tune</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Warp Records</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Domino</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Mute</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Hyperdub</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Rough Trade</span>
+            <!-- Repeat for seamless loop -->
+            <span class="text-2xl font-black uppercase tracking-tighter">XL Recordings</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Ninja Tune</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Warp Records</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Domino</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Mute</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Hyperdub</span>
+            <span class="text-2xl font-black uppercase tracking-tighter">Rough Trade</span>
+        </div>
+    </section>
+
+    <!-- Contact / Inquiry -->
+    <section id="contact" class="section-padding bg-brand-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-brand-surface rounded-[40px] p-64 md:p-80 border border-brand-border relative overflow-hidden">
+                <div class="max-w-2xl relative z-10">
+                    <h2 class="text-5xl md:text-7xl font-serif italic mb-32">Build your <span class="text-brand-accent underline">Legacy</span> in 2026.</h2>
+                    <p class="text-brand-muted text-xl mb-64">Applications for the Q3 distribution cycle are now open. We're looking for labels with a vision for the future of physical media.</p>
+                    
+                    <form class="space-y-32" onsubmit="event.preventDefault(); showSuccess();">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-32">
+                            <div class="space-y-8">
+                                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted">Label Name</label>
+                                <input type="text" placeholder="Independent Records Ltd." class="w-full bg-transparent border-b border-brand-border py-12 focus:border-brand-accent outline-none transition-colors text-lg">
+                            </div>
+                            <div class="space-y-8">
+                                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted">Email Address</label>
+                                <input type="email" placeholder="contact@label.co.uk" class="w-full bg-transparent border-b border-brand-border py-12 focus:border-brand-accent outline-none transition-colors text-lg">
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted">Distribution Capacity</label>
+                            <select class="w-full bg-transparent border-b border-brand-border py-12 focus:border-brand-accent outline-none transition-colors text-lg appearance-none cursor-pointer">
+                                <option class="bg-brand-surface">Full Global Distribution (UK/EU/US/AS)</option>
+                                <option class="bg-brand-surface">Eco-Pressing & Local Fulfillment</option>
+                                <option class="bg-brand-surface">Logistics Hub Only</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-accent px-48 py-20 rounded-full font-bold uppercase tracking-[0.2em] text-xs">Submit for Q3 Cycle</button>
+                    </form>
+                    <div id="successMessage" class="hidden py-48">
+                        <h3 class="text-3xl font-serif italic text-brand-accent">Inquiry Stored.</h3>
+                        <p class="text-brand-muted mt-16">Our team will reach out within 24 hours to schedule a 2026 intake strategy session.</p>
+                    </div>
+                </div>
+                <!-- Abstract Vinyl Background Element -->
+                <div class="absolute -right-40 bottom-0 w-[500px] h-[500px] opacity-5 pointer-events-none">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="80" stroke="white" stroke-width="0.5" fill="none"/>
+                        <circle cx="100" cy="100" r="60" stroke="white" stroke-width="0.5" fill="none"/>
+                        <circle cx="100" cy="100" r="40" stroke="white" stroke-width="0.5" fill="none"/>
+                        <circle cx="100" cy="100" r="20" stroke="white" stroke-width="0.5" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black py-80 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-64 mb-64">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-24">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#E2FF31" stroke-width="2"/>
+                        </svg>
+                        <span class="font-bold text-xl tracking-tighter uppercase">Groove Distro</span>
+                    </div>
+                    <p class="text-brand-muted max-w-xs text-sm leading-relaxed">
+                        Supplying the global independent music industry with premium vinyl logistics since 2012. 
+                        Unit 4, Bermondsey Trading Estate, London. SE16 2026.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-white mb-24">2026 Portal</h5>
+                    <ul class="space-y-12 text-sm text-brand-muted">
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">B2B Login</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">New Shipments</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Label Portal</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Zero-Carbon Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-white mb-24">Network</h5>
+                    <ul class="space-y-12 text-sm text-brand-muted">
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">London</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Berlin Hub</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">New York Dispatch</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition-colors">Tokyo Logistics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-32 border-t border-brand-border gap-16">
+                <p class="text-xs text-brand-muted">© 2026 Groove Distro UK. Company No. 08422104.</p>
+                <div class="flex space-x-24 text-[10px] font-bold uppercase tracking-widest text-brand-muted">
+                    <a href="#" class="hover:text-white">Privacy 2.6</a>
+                    <a href="#" class="hover:text-white">Global Trade Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSuccess() {
+            document.querySelector('form').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
